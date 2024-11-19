@@ -35,11 +35,18 @@ Welcome to the **Online Treasure Hunt System**, a web-based application designed
 
 ## 📸 Screenshots
 
-**User Dashboard**  
-_Description: A sleek and interactive user dashboard with a question interface._  
+**Login** 
+![Alt Text](https://raw.githubusercontent.com/Rushikesh-Satpute/Treasure_hunt/refs/heads/main/images/login.png)
 
-**Admin Dashboard**  
-_Description: An analytics dashboard with controls for question management._  
+**Manage Questions**
+![Alt Text](https://raw.githubusercontent.com/Rushikesh-Satpute/Treasure_hunt/refs/heads/main/images/addq.png)
+![Alt Text](https://raw.githubusercontent.com/Rushikesh-Satpute/Treasure_hunt/refs/heads/main/images/editq.png)
+![Alt Text](https://raw.githubusercontent.com/Rushikesh-Satpute/Treasure_hunt/refs/heads/main/images/newq.png)
+
+**Leaderboard**  
+![Alt Text](https://raw.githubusercontent.com/Rushikesh-Satpute/Treasure_hunt/refs/heads/main/images/leaderboard.png)
+![Alt Text](https://raw.githubusercontent.com/Rushikesh-Satpute/Treasure_hunt/refs/heads/main/images/Leaderboard1.png)
+
 
 > Add screenshots here to showcase UI (optional but recommended).
 
