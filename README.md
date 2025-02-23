@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Online Treasure Hunt System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the **Online Treasure Hunt System**, a web-based application designed to provide an engaging treasure hunt experience with an intuitive user interface and robust administrative features. The platform supports user participation in the hunt, admin question management, and real-time analytics.  
 
-## Available Scripts
+🌐 **Deployed:** [jscoecesa.netlify.app](https://jscoecesa.netlify.app)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### User Features
+- **User Login**: Secure login system for participants.  
+- **Interactive Gameplay**: Answer questions to progress through the treasure hunt.  
+- **Leaderboard**: View your rank and compare with other participants in real-time.  
+- **Detailed Analysis**: Track time spent on each question with insightful feedback.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Admin Features
+- **Question Management**: Add, edit, and delete questions, answers, and clues.  
+- **User Analytics Dashboard**: Analyze user performance and behavior through graphical insights.  
+- **Leaderboard Control**: Manage and monitor leaderboard rankings.  
 
-### `npm test`
+### Additional Features
+- **Responsive Design**: Optimized for both desktop and mobile devices.  
+- **Secure Authentication**: Role-based access for admins and users.  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend**: React.js, Tailwind CSS  
+- **Backend**: Firebase Realtime Database  
+- **Deployment**: Netlify  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📸 Screenshots
 
-### `npm run eject`
+**Login** 
+![Alt Text](https://raw.githubusercontent.com/Rushikesh-Satpute/Treasure_hunt/refs/heads/main/images/login.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Manage Questions**
+![Alt Text](https://raw.githubusercontent.com/Rushikesh-Satpute/Treasure_hunt/refs/heads/main/images/addq.png)
+![Alt Text](https://raw.githubusercontent.com/Rushikesh-Satpute/Treasure_hunt/refs/heads/main/images/editq.png)
+![Alt Text](https://raw.githubusercontent.com/Rushikesh-Satpute/Treasure_hunt/refs/heads/main/images/newq.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Leaderboard**  
+![Alt Text](https://raw.githubusercontent.com/Rushikesh-Satpute/Treasure_hunt/refs/heads/main/images/leaderboard.png)
+![Alt Text](https://raw.githubusercontent.com/Rushikesh-Satpute/Treasure_hunt/refs/heads/main/images/Leaderboard1.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+> Add screenshots here to showcase UI (optional but recommended).
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🧑‍💻 Getting Started
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Follow these steps to set up the project locally:  
 
-### Code Splitting
+### Prerequisites
+- Node.js installed  
+- Firebase account set up  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Installation
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/Rushikesh-Satpute/online-treasure-hunt.git
+   cd online-treasure-hunt
+   ```
+2. Install dependencies:
+```bash
+npm install
+```
+3. Set up Firebase:
+- Create a Firebase project.
+- Enable Realtime Database and Authentication.
+- Replace firebaseConfig in the project with your Firebase credentials.
+4. Start the development server
+```bash
+npm start
+```
+5. Open http://localhost:3000 in your browser.
