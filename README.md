@@ -2,7 +2,7 @@
 
 Welcome to the **Online Treasure Hunt System**, a web-based application designed to provide an engaging treasure hunt experience with an intuitive user interface and robust administrative features. The platform supports user participation in the hunt, admin question management, and real-time analytics.  
 
-🌐 **Deployed:** [jscoecesa.netlify.app](https://treasure-hunts.vercel.app)
+🌐 **Deployed:** [https://treasure-hunts.vercel.app](https://treasure-hunts.vercel.app)
 
 ---
 
