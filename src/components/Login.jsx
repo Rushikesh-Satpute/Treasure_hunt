@@ -9,6 +9,7 @@ export default function Login({ setUserRole, setUserId }) {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
   const navigate = useNavigate();
 
   const handleLogin = (e) => {
@@ -24,22 +25,22 @@ export default function Login({ setUserRole, setUserId }) {
         try {
           // Fetch user data from Firebase
 
-          
-            const adminsRef = ref(database, 'admins');
-            const adminsSnapshot = await get(adminsRef);
-            const adminsData = adminsSnapshot.val();
 
-            // Check if the user's email is in the admins list
-            const isAdmin = adminsData.some(admin => admin?.email.toLowerCase() === email.toLowerCase());
-            const role = isAdmin ? 'admin' : 'user'; // Assign role based on email
-            setUserRole(role); // Set the user role
+          const adminsRef = ref(database, 'admins');
+          const adminsSnapshot = await get(adminsRef);
+          const adminsData = adminsSnapshot.val();
 
-            // Navigate based on the role
-            if (role === 'admin') {
-              navigate('/admin');
-            } else {
-              navigate('/main'); // or wherever you want to direct regular users
-            }
+          // Check if the user's email is in the admins list
+          const isAdmin = adminsData.some(admin => admin?.email.toLowerCase() === email.toLowerCase());
+          const role = isAdmin ? 'admin' : 'user'; // Assign role based on email
+          setUserRole(role); // Set the user role
+
+          // Navigate based on the role
+          if (role === 'admin') {
+            navigate('/admin');
+          } else {
+            navigate('/main'); // or wherever you want to direct regular users
+          }
         } catch (error) {
           setError('Error fetching user role.');
           console.error('Role fetch error: ', error.message);
@@ -108,9 +109,28 @@ export default function Login({ setUserRole, setUserId }) {
         {/* Redirect to Sign-up */}
         <p className="text-center text-gray-400">
           Don't have an account?{' '}
-          <a href="/contact" className="text-blue-500 hover:underline">Contact</a>
+          <button onClick={() => setShowPopup(true)} className="text-blue-500 hover:underline">
+            Get Credentials
+          </button>
         </p>
       </div>
+
+      {showPopup && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-gray-800 p-6 rounded-lg shadow-lg w-80">
+            <h3 className="text-xl font-semibold text-white mb-4">Test Credentials</h3>
+            <p className="text-gray-300"><strong>Admin:</strong> <br/>admin@gmail.com | pass: 12345678</p>
+            <p className="text-gray-300"><strong>User:</strong> <br/>test@gmail.com | pass: 12345678</p>
+            <button
+              onClick={() => setShowPopup(false)}
+              className="mt-4 w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-md"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
+
